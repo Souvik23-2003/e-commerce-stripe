@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow sticky top-0 z-50">
+        <nav class="max-w-screen-xl mx-auto flex items-center justify-between px-6 h-16">
+            <h1 class="text-xl font-semibold">
+                <a href="/" class="text-blue-600">MyStore</a>
+            </h1>
+            <ul class="list-none flex gap-6 text-gray-700 font-medium">
+                <li>
+                  <a href="/cart.html">
+                    Cart<span id="cart-count" class="ml-1 inline-flex
+                     items-center justify-center bg-blue-600 text-white
+                      text-xs rounded-full px-1.5 min-w-[1.25rem] h-5
+                       align-top">
+                        0
+                    </span>
+                  </a>
+                </li>
+                <li>
+                    <a href="/admin.html" class="text-gray-700 font-medium
+                     hover:text-gray-900">Admin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="product-details" class="py-6"></main>
+
+    <script src="/app.js"></script>
+</body>
+</html>

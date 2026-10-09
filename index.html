@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow sticky top-0 z-50">
+        <nav class="max-w-screen-xl mx-auto flex items-center 
+        justify-between px-6 h-16">
+            <h1 class="text-xl font-semibold">
+               <a href="/" class="text-blue-600">MyStore</a>
+            </h1>
+            <ul class="list-none flex gap-6">
+                <li>
+                    <a href="/cart.html" class="text-gray-700
+                    font-medium hover:text-gray-900">Cart</a>
+                         <span id="cart-count" class="ml-1 inline-flex 
+                         items-center justify-center bg-blue-600
+                         text-white rounded-full px-1.5 min-w-[1.
+                         25rem] h-5 align-top">
+                            0
+
+                         </span>
+            
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin.html"
+                    class="text-gray-700 font-medium
+                    hover:text-gray-900">Admin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="max-w-screen-xl ml-auto py-6 px-6">
+        <div class="flex flex-wrap items-center
+         justify-between gap-4 mb-8">
+            <h2 class="text-2xl font-semibold">
+                Products
+            </h2>
+            <div class="flex gap-3 w-full sm:w-auto">
+                <input type="text" id="search-bar"
+                placeholder="Search products..."
+                class="flex-1 sm:flex-none sm:w-64 px-3 py-2
+                border border-grey-300 rounded-md text-sm
+                focus:outline-none focus:ring-2
+                focus:ring-blue-500">
+                <select id="category-filter" class="px-3 py-2
+                border border-gray-300 rounded-md text-sm
+                focus:outline-none focus:ring-2
+                focus:ring-blue-500"></select>
+                <option value="">All Categories</option>
+            </div>
+        </div>
+        <div id="product-container" class="grid
+        grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+        lg:grid-cols-4 gap-8 relative min-h-[200px]">
+           <div class="absolute left-1/2 top-12
+           -translate-x-1/2">
+                <div class="h-12 w-12 rounded-full border-4
+                border-gray-200 border-t-blue-500
+                animate-spin hidden"> </div>
+               
+           </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
